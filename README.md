@@ -1,4 +1,5 @@
 #  Task Management System Backend
+#  Focussed only for backend 
 
 *A robust RESTful API for task management built with Node.js, Express, and MongoDB*
 
@@ -73,8 +74,8 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/task-management-api.git
-   cd task-management-api
+   git clone https://github.com/Sartaj-Ashraf/Task-Manager-MERN-MINI-project.git
+   cd backend
    ```
 
 2. **Install dependencies**
