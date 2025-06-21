@@ -11,7 +11,7 @@ const tasksRouter = require("./routes/tasks");
 // Middleware
 const notFound = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
-
+const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 
 
@@ -19,6 +19,10 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static("./public"));
 app.use(express.json());
 
+app.use(cors({
+    origin: true,
+    credentials: true
+}));
 
 app.use("/api/v1/tasks", tasksRouter);
 app.use(notFound);
